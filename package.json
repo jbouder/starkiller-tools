@@ -1,11 +1,13 @@
 {
-  "name": "starkiller-tools",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "starkiller",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:starkiller-tools": "npm publish --access public --provenance"
+    "build:starkiller-tools": "cd packages/starkiller-tools && npm pack",
+    "publish:starkiller-tools": "cd packages/starkiller-tools && npm publish --access public --provenance"
   },
   "author": "",
   "license": "ISC"
