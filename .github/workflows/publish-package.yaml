@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Package
-        run: npm pack
+        run: npm run build:starkiller-tools
 
       - name: Publish Package
         run: npm run publish:starkiller-tools
